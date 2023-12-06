@@ -1,10 +1,9 @@
-import "./styles/index.scss";
+import Homehero from "./components/Homehero";
 
 export default function Home() {
   return (
     <main>
-      <h1>Olá Mundo</h1>
-      <p>Meu primeiro APP Next.js & Sass!</p>
+      <Homehero />
     </main>
   );
 }

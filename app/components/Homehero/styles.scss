@@ -1,0 +1,32 @@
+@use "../../styles/variables" as *;
+
+.homehero {
+  display: flex;
+}
+
+.homehero-content {
+  width: 40%;
+
+  margin-top: 160px;
+
+  h1 {
+    font-size: 3.5rem;
+    color: $black;
+    max-width: 500px;
+  }
+
+  p {
+    color: $gray500;
+    max-width: 500px;
+    padding: 1.5rem 0 3rem 0;
+    font-size: 1.5rem;
+  }
+}
+
+.homehero-img {
+  width: 60%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
