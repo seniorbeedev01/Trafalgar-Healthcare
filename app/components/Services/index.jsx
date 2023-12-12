@@ -1,5 +1,9 @@
+import Image from "next/image";
+
 import ServiceItem from "./ServiceItem";
 import "./styles.scss";
+
+import element from "@/public/element.svg";
 
 import searchDoctor from "@/public/search-doctor.svg";
 import onlinePharmacy from "@/public/online-pharmacy.svg";
@@ -7,6 +11,7 @@ import consultation from "@/public/consultation.svg";
 import detailsInfo from "@/public/details-info.svg";
 import emergencyCare from "@/public/emergency-care.svg";
 import tracking from "@/public/tracking.svg";
+import Trace from "../Trace";
 
 export default function Services() {
   return (
@@ -42,6 +47,9 @@ export default function Services() {
       <div className="container">
         <div className="services-info">
           <h2>Our services</h2>
+          <div className="trace-wrap">
+            <Trace color="#458ff6" margin="0 auto" />
+          </div>
           <p>
             We provide to you the best choiches for you. Adjust it to your
             health needs and make sure your undergo treatment with our highly
@@ -51,6 +59,10 @@ export default function Services() {
         </div>
 
         <div className="services-list">
+          <div className="element">
+            <Image src={element} alt="element" height={115} />
+          </div>
+
           <ServiceItem
             imageSrc={searchDoctor}
             imageHeight={90}

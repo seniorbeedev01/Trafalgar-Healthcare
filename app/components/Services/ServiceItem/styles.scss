@@ -1,4 +1,5 @@
 @use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
 
 .service-item {
   width: 100%;
@@ -7,8 +8,7 @@
   border-radius: 20px;
   background: #fff;
 
-  /* drop shadow */
-  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  @include sombra;
 
   padding: 3rem 2rem;
 
@@ -22,7 +22,7 @@
     padding-top: 1.5rem;
     font-size: 1rem;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.6;
   }
 }
 

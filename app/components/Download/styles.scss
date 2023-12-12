@@ -1,0 +1,34 @@
+@use "../../styles/variables" as *;
+
+.download {
+  width: 100%;
+  height: 477px;
+
+  margin-top: 160px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  // border: 1px solid red;
+}
+
+.download-info {
+  flex: 1;
+
+  padding-right: 80px;
+
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    width: 80%;
+  }
+
+  p {
+    color: $gray500;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+  }
+
+  // border: 1px solid blue;
+}

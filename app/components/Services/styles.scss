@@ -3,6 +3,8 @@
 .services {
   margin-top: 160px;
 
+  padding-bottom: 50px;
+
   overflow: hidden;
   position: relative;
 }
@@ -10,7 +12,7 @@
 .services-info {
   h2 {
     font-size: 2.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     text-align: center;
   }
 
@@ -18,8 +20,13 @@
     color: $gray500;
     text-align: center;
     font-size: 1.2rem;
-    padding-bottom: 4rem;
+    line-height: 1.5;
+    padding: 2rem 0 4rem 0;
   }
+}
+
+.trace-wrap {
+  text-align: center;
 }
 
 .service-bg {
@@ -27,7 +34,7 @@
 
   position: absolute;
 
-  left: -120px;
+  left: -100px;
   top: 100px;
 
   height: 967.94px;
@@ -37,9 +44,9 @@
 .service-bg svg {
   position: relative;
 
-  top: 20px;
+  top: 100px;
 
-  rotate: 21.46deg;
+  // rotate: 21.46deg;
 
   height: 671.38px;
   width: 937.96px;
@@ -57,4 +64,17 @@
   justify-content: space-between;
   grid-template-columns: 350px 350px 350px;
   grid-row-gap: 36px;
+}
+
+.element {
+  position: absolute;
+
+  z-index: 100;
+
+  right: -65px;
+  top: calc(50% - (115px / 2));
+
+  img {
+    opacity: 0.65;
+  }
 }
