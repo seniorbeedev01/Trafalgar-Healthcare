@@ -3,18 +3,32 @@
 /* Small devices (landscape phones, 576px and up) */
 .providers {
   width: 100%;
-  height: 477px;
 
+  margin: 0 auto;
   margin-top: 110px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.provider-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    object-fit: contain;
+
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .provider-info {
-  flex: 1;
-
-  padding-left: 120px;
+  margin-top: 48px;
 
   h2 {
     font-size: 2.5rem;
@@ -35,4 +49,36 @@
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1440px) {
+  .providers {
+    width: 100%;
+    height: 477px;
+
+    padding: 0;
+    margin-top: 110px;
+
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .provider-info {
+    margin-top: 0;
+
+    flex: 1;
+
+    padding-left: 120px;
+  }
+
+  .provider-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & img {
+      object-fit: contain;
+
+      height: 477;
+      width: auto;
+    }
+  }
 }
