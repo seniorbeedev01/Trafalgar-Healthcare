@@ -14,7 +14,9 @@ export default function Homehero() {
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone
           </p>
-          <Button text="Consult Today" />
+          <div className="homehero-content-cta">
+            <Button text="Consult Today" />
+          </div>
         </div>
         <div className="homehero-img">
           <Image

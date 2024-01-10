@@ -1,32 +1,106 @@
 @use "../../styles/variables" as *;
 
+/* Small devices (landscape phones, 576px and up) */
 .homehero {
   display: flex;
+  flex-direction: column-reverse;
+
+  padding: 0 2rem;
 }
 
 .homehero-content {
-  width: 40%;
+  width: 100%;
 
-  margin-top: 160px;
+  margin-top: 48px;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: $black;
-    max-width: 500px;
+
+    text-align: center;
   }
 
   p {
     color: $gray500;
-    max-width: 500px;
     padding: 1.5rem 0 3rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
+    max-width: 500px;
+
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
-.homehero-img {
-  width: 60%;
-
+.homehero-content-cta {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+.homehero-img {
+  display: flex;
+  justify-content: center;
   align-items: center;
+
+  & img {
+    object-fit: contain;
+
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1440px) {
+  .homehero {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+  }
+
+  .homehero-content {
+    width: 40%;
+
+    margin-top: 160px;
+
+    h1 {
+      font-size: 3.5rem;
+      max-width: 500px;
+
+      text-align: left;
+    }
+
+    p {
+      max-width: 500px;
+      font-size: 1.5rem;
+
+      text-align: left;
+    }
+  }
+
+  .homehero-content-cta {
+    justify-content: flex-start;
+  }
+
+  .homehero-img {
+    width: 60%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & img {
+      object-fit: contain;
+
+      // width: 100%;
+      height: 598px;
+      width: auto;
+    }
+  }
 }
